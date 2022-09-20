@@ -10,12 +10,16 @@
 header{
     background-color: #f0f0f0;
     width: 100%;
+    padding: 10px 12px;
     position: fixed;
     z-index: 999;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 200px;
+    align-items: center; 
+}
+.logo{
+    height: 6em;
+    padding-left: 20px;
 }
 .logo:hover{
 transform: scale(1.05);
@@ -31,7 +35,7 @@ transform: scale(1.05);
     color:red
 }
 section{
-    padding: 100px 200px;
+    padding: 20px 12px;
 }
 .main{
     width: 100%;
@@ -185,7 +189,12 @@ section{
 .contact .info p{
     font-size: 1.5em;
 }
+.contact .info a{
+    text-decoration: none;
+    color: black;
+}
 .footer{
+    width: 100%;
     background-color: #000016;
     color: white;
     padding: 2em;
@@ -206,18 +215,19 @@ section{
     font-size: 1.3em;
 }
 
-@media(max-width:1023) {
-    header{
-        padding: 12px 20px;
-    }
-    .navigation{
-        padding-left: 10px;
-    }
+@media(min-width:919) and (max-width:1104) {
+   header{
+    padding: 10px 12px !important;
+  }
+  .navigation{
+    padding-left: 10px !important;
+  }
+
     .title{
         font-size:1.8em;
     }
-    section{
-        padding: 80px 20px;
+section{
+        padding: 80px 20px !important;
     }
     .main h2{
         font-size: 1em;
@@ -230,7 +240,16 @@ section{
         align-items: center;
     }
 }
-@media(max-width:641px) {
+@media(min-width:768) and (max-width:918px) {
+  header{
+    padding: 10px 12px;
+  }
+  .navigation{
+    padding-left: 10px;
+  }
+  section{
+    padding: 80px 20px;
+}
     body{
         font-size: 12px;
     }
@@ -240,10 +259,16 @@ section{
     .main h3{
         font-size: 1.4em;
     }
+    .contact .info p{
+        font-size: 1em;
+    }
 }
 
-@media(max-width:300px) {
+@media(max-width:767px) {
     body{
         font-size: 10px;
+    }
+    .contact .info p{
+        font-size: 1em;
     }
 }
