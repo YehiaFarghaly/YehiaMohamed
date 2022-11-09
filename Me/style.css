@@ -10,7 +10,7 @@
 header{
     background-color: #f0f0f0;
     width: 100%;
-    padding: 10px 12px;
+    padding: 10px 50px;
     position: fixed;
     z-index: 999;
     display: flex;
@@ -19,7 +19,7 @@ header{
 }
 .logo{
     height: 6em;
-    padding-left: 20px;
+    padding-left: 50px;
 }
 .logo:hover{
 transform: scale(1.05);
@@ -35,7 +35,7 @@ transform: scale(1.05);
     color:red
 }
 section{
-    padding: 20px 12px;
+    padding: 20px 50px;
 }
 .main{
     width: 100%;
