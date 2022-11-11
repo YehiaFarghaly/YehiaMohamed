@@ -67,7 +67,10 @@ section{
     margin-top: 10px;
     margin-bottom: 30px;
 }
-
+h3 a{
+    text-decoration: none;
+     color: white;
+}
 .main-btn{
     color:white;
     background-color: #dda61b;
